@@ -1,0 +1,18 @@
+return {
+    remote_host = "",
+    use_key = true,
+    paths = {
+        {
+            remote_path = "",
+            local_path = "",
+            ignored = {
+                "config",
+                "dotenv",
+                "errors",
+            },
+        },
+    },
+    ignore_dotfiles = true,
+    remote_or_local = "remote",
+}
+
