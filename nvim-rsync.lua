@@ -200,7 +200,7 @@ end
 vim.api.nvim_create_user_command('FTPSync', Sync.Execute, {})
 
 vim.api.nvim_create_augroup('FTPSync', { clear = true })
-vim.api.nvim_create_autocmd({ 'DirChanged' }, {
+vim.api.nvim_create_autocmd({ 'BufWritePost' }, {
     group = 'FTPSync',
     callback = Sync.Execute,
 })
