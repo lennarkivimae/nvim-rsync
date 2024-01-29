@@ -184,6 +184,12 @@ function Sync.OpenErrorBuffer()
 end
 
 function Sync.Execute()
+    local configFile = vim.fn.filereadable(".nvim-rsync.config.lua")
+
+    if configFile == 0 then
+        return
+    end
+
     Sync.ClearErrorBuffer()
     local commands = Sync.PrepareCommands()
 

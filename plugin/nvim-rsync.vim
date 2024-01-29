@@ -1,0 +1,2 @@
+lua require('nvim.rsync')
+
