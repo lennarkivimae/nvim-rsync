@@ -1,2 +1,2 @@
-lua require('nvim.rsync')
+lua require('nvim-rsync')
 
